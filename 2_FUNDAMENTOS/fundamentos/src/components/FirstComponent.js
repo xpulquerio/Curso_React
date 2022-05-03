@@ -1,5 +1,8 @@
 //Comentários normais
 
+//Components
+import MyComponent from "./MyComponent";
+
 const FirstComponent = () => {
     //Comentários normais
 
@@ -7,9 +10,10 @@ const FirstComponent = () => {
 
     return (
         <div>
-            <h1>Meu Primeiro Componente</h1>
+            <b>Meu Primeiro Componente</b>
             <p className="Teste">Meu Texto</p>
             {/*Criando Comentário com JSX*/}
+            <MyComponent/>
         </div>
     ); 
 };
