@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import City from './assets/city.jpg';
 
+//Components
+import ManageData from './components/ManageData';
+
+//
 import './App.css';
 
 
@@ -16,6 +20,7 @@ function App() {
       <div>
         <img src={City} alt="Cidade" />
       </div>
+      <ManageData/>
     </div>
   );
 }
