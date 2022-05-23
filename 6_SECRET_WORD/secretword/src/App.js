@@ -28,7 +28,7 @@ function App() {
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
   const [guesses, setGuesses] = useState(3);
-  const [score, setScore] = useState(0)
+  const [score, setScore] = useState(0);
 
 
   const pickedWordAndCategory = () => {
@@ -36,17 +36,19 @@ function App() {
     const categories = Object.keys(words)
     const category = categories[Math.floor(Math.random() * Object.keys(categories).length)]
     console.log(category);
+
     //pick a random word
     const word = words[category][Math.floor(Math.random() * words[category].length)]
     console.log(word);
 
-    return { word, category };
+    return { category, word };
   }
 
   //starts the secret word game
   const startGame = () => {
+    
     //pick word and pick category
-    const { word, category } = pickedWordAndCategory();
+    const { category, word  } = pickedWordAndCategory();
 
     //create ana array of letters
     let wordLetters = word.split("");
@@ -64,6 +66,7 @@ function App() {
 
   // process letter input
   const verifyLetter = (letter) => {
+  
     const normalizedLetter = letter.toLowerCase();
 
     // check if letter has already been utilized
@@ -76,11 +79,13 @@ function App() {
 
     // push guessed letter or remove a chance
     if (letters.includes(normalizedLetter)) {
+      console.log("ACERTOU");
       setGuessedLetters((actualGuessedLetters) => [
         ...actualGuessedLetters,
         letter,
       ]);
     } else {
+      console.log("ERROU");
       setWrongLetters((actualWrongLetters) => [
         ...actualWrongLetters,
         normalizedLetter,
@@ -89,7 +94,7 @@ function App() {
     }
   };
 
-  console.log(wrongLetters);
+  console.log("Letras erradas: "+wrongLetters);
 
   //restarts the game
   const retry = () => {
