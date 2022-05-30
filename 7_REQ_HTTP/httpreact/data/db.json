@@ -1,19 +1,58 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Camisa",
-            "price": 59.9
-        },
-        {
-            "id": 2,
-            "name": "Calça vermelha",
-            "price": 90
-        },
-        {
-            "id": 3,
-            "name": "Boné aba reta",
-            "price": 29.9
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 2,
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": 3,
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": 4,
+      "name": "Boné preto",
+      "price": 29.9
+    },
+    {
+      "name": "Saia",
+      "price": "50",
+      "id": 5
+    },
+    {
+      "name": "Óculos",
+      "price": "12.50",
+      "id": 6
+    },
+    {
+      "name": "Camiseta",
+      "price": "12.75",
+      "id": 7
+    },
+    {
+      "name": "Camisa vermelha",
+      "price": "12.75",
+      "id": 8
+    },
+    {
+      "name": "Camisa preta",
+      "price": "15",
+      "id": 9
+    },
+    {
+      "name": "Camisa rosa",
+      "id": 10
+    },
+    {
+      "name": "Teste",
+      "price": "",
+      "id": 11
+    }
+  ]
 }
