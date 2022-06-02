@@ -36,23 +36,9 @@
       "id": 7
     },
     {
-      "name": "Camisa vermelha",
-      "price": "12.75",
+      "name": "Blusa rosa ",
+      "price": "65.50",
       "id": 8
-    },
-    {
-      "name": "Camisa preta",
-      "price": "15",
-      "id": 9
-    },
-    {
-      "name": "Camisa rosa",
-      "id": 10
-    },
-    {
-      "name": "Teste",
-      "price": "",
-      "id": 11
     }
   ]
 }
